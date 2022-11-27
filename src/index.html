@@ -14,5 +14,37 @@
       <div class="emoji mb-6">💣🤯💥</div>
       <button class="button">Boom?</button>
     </div>
+    <script>
+      let article1 = document.createElement('article');
+      article1.setAttribute("class", "message");
+      article1.textContent = "Simple text content!";
+
+      let article2 = document.createElement('article');
+      article2.setAttribute("class", "message");
+      article2.textContent = "Simple text content!";
+
+      let article3 = document.createElement('article');
+      article3.setAttribute("class", "message");
+      article3.textContent = "Simple text content!";
+
+      let article4 = document.createElement('article');
+      article4.setAttribute("class", "message");
+      article4.textContent = "Simple text content!";
+
+      let article5 = document.createElement('article');
+      article5.setAttribute("class", "message");
+      article5.textContent = "Simple text content!";
+      
+      let div = document.querySelector("div.main");
+      div.addEventListener('click', viewArticle);
+      
+      function viewArticle(){
+        div.prepend(article1);
+        div.prepend(article2);
+        div.prepend(article3);
+        div.prepend(article4);
+        div.prepend(article5);
+      }
+    </script>
   </body>
 </html>
